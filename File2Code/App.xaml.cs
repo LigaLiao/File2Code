@@ -41,7 +41,7 @@ namespace File2Code
         /// <param name="e">有关启动请求和过程的详细信息。</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-            //CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = false;
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
             ApplicationView view = ApplicationView.GetForCurrentView();
             ApplicationViewTitleBar titleBar = view.TitleBar;
             titleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
